@@ -27,10 +27,10 @@
     "apps/*"
   ],
   "scripts": {
-    "dev:demo": "npm run dev --workspace apps/demo --",
-    "build": "npm run build:sdk && npm run build:demo",
-    "build:demo": "npm run build --workspace apps/demo",
-    "build:sdk": "npm run build --workspace packages/core",
+    "dev:demo": "node init && npm run dev --workspace apps/demo --",
+    "build": "node init && npm run build:sdk && npm run build:demo",
+    "build:demo": "node init && npm run build --workspace apps/demo",
+    "build:sdk": "node init && npm run build --workspace packages/core",
     "preview:demo": "npm run preview --workspace apps/demo --",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

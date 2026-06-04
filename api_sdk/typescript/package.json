@@ -44,7 +44,7 @@
     "official-api"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "test": "vitest run",
     "lint": "tsc --noEmit",
     "prepublishOnly": "npm run lint && npm run build && npm test"
